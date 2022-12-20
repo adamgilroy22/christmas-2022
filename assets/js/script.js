@@ -34,7 +34,7 @@ var x = setInterval(function() {
 }, 1000);
 
 // Christmas Jokes
-var cards = document.querySelectorAll('.card');
+var cards = document.querySelectorAll('.joke-card');
 
 [...cards].forEach((card)=>{
   card.addEventListener( 'click', function() {
