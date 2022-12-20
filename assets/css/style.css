@@ -1,11 +1,12 @@
 /* Nav */
 nav .brand-logo {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 10px;
 }
 
 nav li a {
-    font-size: 1.3rem;;
+    font-size: 1.3rem;
+    ;
 }
 
 /* Cards */
@@ -15,10 +16,42 @@ nav li a {
     align-items: center;
 }
 
+/* Joke Card */
+.joke-card {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 0.85s;
+}
+
+.joke-card p {
+    margin: auto;
+}
+
+.front {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+}
+
+.back {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    width: 100%;
+}
+
+.joke-card.is-flipped {
+    transform: translateX(-100%) rotateY(180deg);
+  }
+
 /* Media Queries */
 /* Nav */
 @media only screen and (max-width: 450px) {
     nav .brand-logo {
         font-size: 1.4rem;
     }
-  }
+}

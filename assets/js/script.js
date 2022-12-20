@@ -32,3 +32,23 @@ var x = setInterval(function() {
     document.getElementById("xmasCountdown").innerHTML = "TODAY IS CHRISTMAS!";
   }
 }, 1000);
+
+// Christmas Jokes
+var cards = document.querySelectorAll('.card');
+
+[...cards].forEach((card)=>{
+  card.addEventListener( 'click', function() {
+    card.classList.toggle('is-flipped');
+    if (card.classList.contains('red')){
+        card.classList.toggle('red');
+        card.classList.toggle('darken-3');
+        card.classList.toggle('green');
+        card.classList.toggle('darken-4');
+    } else if (card.classList.contains('green')){
+        card.classList.toggle('green');
+        card.classList.toggle('darken-4');
+        card.classList.toggle('red');
+        card.classList.toggle('darken-3');
+    }
+  });
+});
