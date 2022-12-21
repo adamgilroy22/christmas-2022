@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  :root {
-    --hue-neutral: 200;
-    --hue-wrong: 0;
-    --hue-correct: 145;
-  }
-
 /* Nav */
 nav .brand-logo {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -111,12 +101,12 @@ nav li a {
   }
   
   .btn.correct {
-    --hue: var(--hue-correct);
+    background-color: #388e3c;
     color: black;
   }
   
   .btn.wrong {
-    --hue: var(--hue-wrong);
+    background-color: #c62828;
   }
   
   .start-btn, .next-btn {
