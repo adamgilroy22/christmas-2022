@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+  }
+
 /* Nav */
 nav .brand-logo {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -47,6 +59,80 @@ nav li a {
 .joke-card.is-flipped {
     transform: translateX(-100%) rotateY(180deg);
 }
+
+/* Quiz */
+.quiz-container.correct {
+    --hue: var(--hue-correct);
+  }
+  
+  .quiz-container.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .quiz-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b5e20;
+  }
+
+  .quiz {
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+  }
+  
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    border: 1px solid #000000;
+    background-color: #00b0ff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+    height: auto;
+  }
+  
+  .btn:hover {
+    border-color: black;
+  }
+  
+  .btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+  }
+  
+  .btn.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hide {
+    display: none;
+  }
 
 /* Media Queries */
 /* Nav */
