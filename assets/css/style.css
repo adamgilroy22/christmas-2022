@@ -98,6 +98,7 @@ nav li a {
   .btn {
     border: 1px solid #000000;
     background-color: #00b0ff;
+    max-width: 100%;
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
@@ -135,6 +136,15 @@ nav li a {
   }
 
 /* Media Queries */
+/* Quiz */
+@media only screen and (max-width: 500px) {
+    .btn-grid {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 10px;
+        margin: 20px 0;
+      }
+}
 /* Nav */
 @media only screen and (max-width: 450px) {
     nav .brand-logo {
