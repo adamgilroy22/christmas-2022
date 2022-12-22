@@ -89,11 +89,11 @@ nav li a {
 
 .btn:hover {
     border-color: black;
+    background-color: #33beff;
 }
 
 .btn.correct {
     background-color: #388e3c;
-    color: black;
 }
 
 .btn.wrong {
