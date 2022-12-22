@@ -24,6 +24,7 @@ function startGame() {
     scoreText.classList.remove('hide')
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
+    userScore = 0
     score.innerHTML = 0
     questionContainerElement.classList.remove('hide')
     setNextQuestion()
@@ -193,11 +194,11 @@ const questions = [{
         question: 'In the song "The Twelve Days of Christmas," on the fourth day, what gift is given?',
         answers: [{
                 text: 'Four calling birds',
-                correct: false
+                correct: true
             },
             {
                 text: 'Four turtle doves',
-                correct: true
+                correct: false
             },
             {
                 text: 'Four French hens',
