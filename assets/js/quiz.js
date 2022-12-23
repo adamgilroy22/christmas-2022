@@ -4,6 +4,7 @@ const resetButton = document.getElementById('reset')
 const welcomeMessage = document.getElementById('welcome')
 const scoreText = document.getElementById('score')
 const score = document.getElementById('current-score')
+const finalScore = document.getElementById('final-score')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
@@ -21,6 +22,7 @@ nextButton.addEventListener('click', () => {
 function startGame() {
     welcomeMessage.classList.add('hide')
     startButton.classList.add('hide')
+    finalScore.classList.add('hide')
     scoreText.classList.remove('hide')
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
@@ -71,6 +73,9 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide')
     } else {
+        scoreText.classList.add('hide')
+        finalScore.innerHTML = `<h3>Well done, you scored ${userScore}/10!</h3>`
+        finalScore.classList.remove('hide')
         startButton.innerText = 'Restart'
         startButton.classList.remove('hide')
     }
