@@ -3,7 +3,7 @@ This is a website I built around Christmas to keep on top of my Web Development 
 
 Most page content was generated using [ChatGPT](https://chat.openai.com/). The Christmas Quiz and countdown in the facts page were built using JavaScript and the rest of the site was built with HTML and CSS using the [Materialize framework](https://materializecss.com/).
 
-I hope everyone has a wonderful Christmas and avery happy New Year!
+I hope everyone has a wonderful Christmas and a very happy New Year!
 
 [Live link to website](https://adamgilroy22.github.io/christmas-2022/)
 
