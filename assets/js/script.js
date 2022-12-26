@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Christmas Countdown
-var countDownDate = new Date("Dec 25, 2022 00:00:00").getTime();
+var countDownDate = new Date("Dec 25, 2023 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
