@@ -23,8 +23,8 @@ var x = setInterval(function () {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element with id="demo"
-    document.getElementById("xmasCountdown").innerHTML = "There's Only <p>" + days + " days " + hours + " hours<p>" +
-        minutes + " minutes and " + seconds + " seconds <p>Until Christmas!";
+    document.getElementById("xmasCountdown").innerHTML = "There's only <p>" + days + " days " + hours + " hours<p>" +
+        minutes + " minutes and " + seconds + " seconds <p>until Christmas!";
 
     // If the count down is finished, write some text
     if (distance < 0) {
